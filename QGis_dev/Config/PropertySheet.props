@@ -5,7 +5,7 @@
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\QGis\QGIS-final-2_18_18\src;D:\QGis\QGIS-final-2_18_18\src\gui;D:\QGis\QGIS-final-2_18_18\src\analysis;D:\QGis\QGIS-final-2_18_18\src\app;D:\QGis\QGIS-final-2_18_18\src\core;D:\QGis\QGIS-final-2_18_18\src\core\geometry;D:\QGis\QGisBuild;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\OSGeo4W64\include;D:\QGis\QGIS-final-2_18_18\src;D:\QGis\QGIS-final-2_18_18\src\gui;D:\QGis\QGIS-final-2_18_18\src\analysis;D:\QGis\QGIS-final-2_18_18\src\app;D:\QGis\QGIS-final-2_18_18\src\core;D:\QGis\QGIS-final-2_18_18\src\core\geometry;D:\QGis\QGisBuild;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;SPATIALITE_VERSION_GE_4_0_0;SPATIALITE_VERSION_G_4_1_1;SPATIALITE_HAS_INIT_EX;NDEBUG;QGISDEBUG=1;CORE_EXPORT=__declspec(dllimport);GUI_EXPORT=__declspec(dllimport);PYTHON_EXPORT=__declspec(dllimport);ANALYSIS_EXPORT=__declspec(dllimport);CUSTOMWIDGETS_EXPORT=__declspec(dllimport);SERVER_EXPORT=__declspec(dllimport);APP_EXPORT=__declspec(dllexport);QT_DISABLE_DEPRECATED_BEFORE=0;QT_NO_CAST_TO_ASCII;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;QGIS_DISABLE_DEPRECATED;HAVE_PGCONFIG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
