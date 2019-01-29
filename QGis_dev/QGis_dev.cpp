@@ -147,6 +147,7 @@ void QGis_dev::initLayerTreeView()
 	mLayerTreeDock->setWidget(w);
 	addDockWidget(Qt::LeftDockWidgetArea, mLayerTreeDock);
 
+	//这个是连接 mMapCanvas 与 mLayerTreeView相关交互的类
 	mLayerTreeCanvasBridge = new QgsLayerTreeMapCanvasBridge(QgsProject::instance()->layerTreeRoot(), mMapCanvas, this);
 	connect(QgsProject::instance(), SIGNAL(writeProject(QDomDocument&)), mLayerTreeCanvasBridge, SLOT(writeProject(QDomDocument&)));
 	connect(QgsProject::instance(), SIGNAL(readProject(QDomDocument)), mLayerTreeCanvasBridge, SLOT(readProject(QDomDocument)));
