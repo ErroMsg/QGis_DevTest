@@ -7,6 +7,10 @@
     <ClCompile>
       <AdditionalIncludeDirectories>D:\QGis\QGIS-final-2_18_18\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)\QGis_SDK\RelWithDebInfo;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>qgis_analysis.lib;qgis_app.lib;qgis_core.lib;qgis_gui.lib;qgis_networkanalysis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
