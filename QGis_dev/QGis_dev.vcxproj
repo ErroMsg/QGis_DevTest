@@ -65,7 +65,7 @@
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_CONCURRENT_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_WIDGETS_LIB;QT_XML_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtPositioning;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtConcurrent;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtCore;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtGui;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtANGLE;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtNetwork;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtPositioning;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtWidgets;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -74,30 +74,33 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>qtmaind.lib;Qt5Concurrentd.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Networkd.lib;Qt5Positioningd.lib;Qt5Widgetsd.lib;Qt5Xmld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\qtmaind.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Concurrentd.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Cored.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Guid.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Networkd.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Positioningd.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Widgetsd.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Xmld.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <QtMoc>
       <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
       <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
-      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtPositioning;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;%(AdditionalIncludeDirectories)</IncludePath>
+      <IncludePath>.\GeneratedFiles;.;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtConcurrent;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtCore;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtGui;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtANGLE;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtNetwork;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtPositioning;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtWidgets;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtXml;%(AdditionalIncludeDirectories)</IncludePath>
       <Define>UNICODE;WIN32;WIN64;QT_CONCURRENT_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_WIDGETS_LIB;QT_XML_LIB;%(PreprocessorDefinitions)</Define>
+      <QTDIR>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64</QTDIR>
     </QtMoc>
     <QtUic>
       <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
       <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+      <QTDIR>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64</QTDIR>
     </QtUic>
     <QtRcc>
       <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
       <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+      <QTDIR>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64</QTDIR>
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;QT_CONCURRENT_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_WIDGETS_LIB;QT_XML_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtPositioning;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtConcurrent;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtCore;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtGui;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtANGLE;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtNetwork;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtPositioning;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtWidgets;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat />
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -105,29 +108,32 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalDependencies>qtmain.lib;Qt5Concurrent.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt5Positioning.lib;Qt5Widgets.lib;Qt5Xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\qtmain.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Concurrent.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Core.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Gui.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Network.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Positioning.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Widgets.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <QtMoc>
       <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
       <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
-      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtPositioning;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;%(AdditionalIncludeDirectories)</IncludePath>
+      <IncludePath>.\GeneratedFiles;.;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtConcurrent;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtCore;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtGui;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtANGLE;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtNetwork;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtPositioning;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtWidgets;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtXml;%(AdditionalIncludeDirectories)</IncludePath>
       <Define>UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;QT_CONCURRENT_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_WIDGETS_LIB;QT_XML_LIB;%(PreprocessorDefinitions)</Define>
+      <QTDIR>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64</QTDIR>
     </QtMoc>
     <QtUic>
       <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
       <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+      <QTDIR>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64</QTDIR>
     </QtUic>
     <QtRcc>
       <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
       <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+      <QTDIR>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64</QTDIR>
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
       <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;QT_CONCURRENT_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_WIDGETS_LIB;QT_XML_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtPositioning;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtConcurrent;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtCore;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtGui;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtANGLE;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtNetwork;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtPositioning;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtWidgets;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -138,23 +144,26 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>qtmain.lib;Qt5Concurrent.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt5Positioning.lib;Qt5Widgets.lib;Qt5Xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\qtmain.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Concurrent.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Core.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Gui.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Network.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Positioning.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Widgets.lib;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\lib\Qt5Xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <QtMoc>
       <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
       <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
-      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtPositioning;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;%(AdditionalIncludeDirectories)</IncludePath>
+      <IncludePath>.\GeneratedFiles;.;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtConcurrent;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtCore;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtGui;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtANGLE;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtNetwork;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtPositioning;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtWidgets;D:\Qt\Qt5.9.1\5.9.1\msvc2015_64\include\QtXml;%(AdditionalIncludeDirectories)</IncludePath>
       <Define>UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;QT_CONCURRENT_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_WIDGETS_LIB;QT_XML_LIB;%(PreprocessorDefinitions)</Define>
+      <QTDIR>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64</QTDIR>
     </QtMoc>
     <QtUic>
       <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
       <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+      <QTDIR>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64</QTDIR>
     </QtUic>
     <QtRcc>
       <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
       <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+      <QTDIR>D:\Qt\Qt5.9.1\5.9.1\msvc2015_64</QTDIR>
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -178,7 +187,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_x64="Qt_5.9.1_x64" MocOptions="" />
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" MocOptions="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
