@@ -25,5 +25,5 @@ private:
 	Ui::QGis_devClass ui;
 
 	QgsMapCanvas *mapCanvas; // 地图画布
-	 // 地图画布所用的图层集合
+	QList<QgsMapCanvasLayer> mapCanvasLayerSet;// 地图画布所用的图层集合
 };

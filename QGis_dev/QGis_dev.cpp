@@ -18,6 +18,7 @@ QGis_dev::QGis_dev(QWidget *parent)
 	mapCanvas->enableAntiAliasing(true); 
 	mapCanvas->setCanvasColor(QColor(255, 255, 255)); 
 	mapCanvas->setVisible(true);
+	mapCanvas->setDestinationCrs(QgsCoordinateReferenceSystem(3857, QgsCoordinateReferenceSystem::EpsgCrsId));
 	
 	initUi();
 }
@@ -48,7 +49,6 @@ void QGis_dev::displayVectorLayer()
 	} 
 	QgsMapLayerRegistry::instance()->addMapLayer(vecLayer);
 
-	QList<QgsMapCanvasLayer> mapCanvasLayerSet;
 	QgsMapCanvasLayer layer(vecLayer);
 	mapCanvasLayerSet.append(layer);
 
@@ -72,7 +72,6 @@ void QGis_dev::displayRasterLayer()
 	} 
 	QgsMapLayerRegistry::instance()->addMapLayer(rasterLayer); 
 	
-	QList<QgsMapCanvasLayer> mapCanvasLayerSet;
 	QgsMapCanvasLayer layer(rasterLayer);
 	mapCanvasLayerSet.append(layer);
 
