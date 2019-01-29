@@ -9,6 +9,12 @@ class QGis_dev : public QMainWindow
 
 public:
 	QGis_dev(QWidget *parent = Q_NULLPTR);
+private:
+	void initUi();
+
+public slots:
+	void displayVectorLayer();
+	void displayRasterLayer();
 
 private:
 	Ui::QGis_devClass ui;
